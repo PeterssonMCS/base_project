@@ -6,8 +6,8 @@ int main()
 {
     stdio_init_all();
 
-    while (true) {
-        printf("Hello, world!\n");
+    while (true) 
+    {
         sleep_ms(1000);
     }
 }
