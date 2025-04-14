@@ -37,21 +37,11 @@ pico_sdk_init()
 
 add_executable(base_project 
                 base_project.c 
-                pOS.c
                 hal/hardware/gpio/gpio.c 
                 hal/hardware/timer/timer.c 
                 hal/hardware/i2c/i2c.c 
-                hal/hardware/spi/spi.c 
-                hal/hardware/adc/adc.c 
-                hal/hardware/pwm/pwm.c
-                hal_def.c 
-                hal/led/led.c
-                hal/buzzer/buzzer.c
-                hal/joystick/joystick.c
                 hal/display/driver1306.c
                 hal/display/font.c
-                hal/microphone/microphone.c
-                hal/aht10/aht10.c
                 hal/button/button.c)
 
 pico_set_program_name(base_project "base_project")
@@ -65,10 +55,6 @@ pico_enable_stdio_usb(base_project 1)
 target_link_libraries(base_project
                         pico_stdlib
                         hardware_i2c 
-                        hardware_spi 
-                        hardware_adc
-                        hardware_pwm
-                        hardware_dma
                         )
 
 # Add the standard include files to the build
