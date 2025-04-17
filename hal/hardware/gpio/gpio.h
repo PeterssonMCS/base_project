@@ -9,16 +9,18 @@
 
 typedef struct
 {
-    int pin;
-    int logic;
+    uint pin;
+    bool logic;
 }GPIO_t;
 
 typedef struct
 {
-    int pin;
+    uint pin;
     int mode;
     int direction;
-    int logic;
+    bool logic;
+    bool cb_enabled;
+    uint events;
 }GPIO_CONFIG_t;
 
 GPIO_t* GPIO_Init( GPIO_CONFIG_t );

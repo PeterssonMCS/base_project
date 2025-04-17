@@ -41,8 +41,7 @@ add_executable(base_project
                 hal/hardware/timer/timer.c 
                 hal/hardware/i2c/i2c.c 
                 hal/display/driver1306.c
-                hal/display/font.c
-                hal/button/button.c)
+                hal/display/font.c)
 
 pico_set_program_name(base_project "base_project")
 pico_set_program_version(base_project "0.1")

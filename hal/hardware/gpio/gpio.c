@@ -24,6 +24,8 @@ GPIO_t* GPIO_Init( GPIO_CONFIG_t cfg )
         gpio_pull_down( gpio->pin );
     }
 
+    gpio_set_irq_enabled( gpio->pin , cfg.events , cfg.cb_enabled );
+
     return gpio;
 }
 

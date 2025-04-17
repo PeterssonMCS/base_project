@@ -41,6 +41,8 @@
         "gpio.h": "c",
         "cstdint": "cpp",
         "stdio.h": "c",
-        "button.h": "c"
+        "button.h": "c",
+        "timer.h": "c",
+        "driver1306.h": "c"
     }
 }
